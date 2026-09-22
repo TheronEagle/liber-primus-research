@@ -1,5 +1,20 @@
 # Research Updates
 
+## 2026-09-23
+- **Magic square traversal test (Open-Leads #2)**: Tested diagonal, anti-diagonal, and spiral orderings of the page 5 magic square as Vigenère keys across all 56 unsolved pages.
+  - Diagonal: 4.44% hit rate (up), 3.71% (down)
+  - Anti-diagonal: 3.53% (up), 3.61% (down)  
+  - Spiral: 3.90% (up), 3.46% (down)
+  - All rates within the 3-4% noise floor established in `ruled-out.md`.
+  - **Result: No signal exceeding noise floor**. All three traversal orderings ruled out.
+  - Next steps: Move to next open lead.
+
+- **Autokey decode test (Open-Leads #0 follow-up)**: Used page 22 word 45 run as key to decode page 47 word 11 run.
+  - Shift-up decode: `VALBWH` (6 chars) — 0 dictionary hits (0%).
+  - Shift-down decode: `LLOUHK` (6 chars) — 0 dictionary hits (0%).
+  - Both well below 41% benchmark from page 73.
+  - **Result: No signal exceeding noise floor**. Specific autokey approach ruled out.
+
 ## 2026-09-22
 - **Lead #0 verification**: Attempted to confirm the 8-word length pattern `[6,7,6,3,6,4,3,3]` at page 22 word 45 / page 47 word 11.  
   - Exhaustive search found no contiguous match.  

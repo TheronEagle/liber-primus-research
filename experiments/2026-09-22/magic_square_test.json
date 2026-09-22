@@ -1,0 +1,38 @@
+{
+  "diagonal_up": {
+    "hits": 122,
+    "total_words": 2746,
+    "rate": 0.04442825928623452,
+    "control_rate": 0
+  },
+  "diagonal_down": {
+    "hits": 102,
+    "total_words": 2746,
+    "rate": 0.037144938091769844,
+    "control_rate": 0
+  },
+  "anti_diagonal_up": {
+    "hits": 97,
+    "total_words": 2746,
+    "rate": 0.035324107793153675,
+    "control_rate": 0
+  },
+  "anti_diagonal_down": {
+    "hits": 99,
+    "total_words": 2746,
+    "rate": 0.03605243991260015,
+    "control_rate": 0
+  },
+  "spiral_up": {
+    "hits": 107,
+    "total_words": 2746,
+    "rate": 0.03896576839038601,
+    "control_rate": 0
+  },
+  "spiral_down": {
+    "hits": 95,
+    "total_words": 2746,
+    "rate": 0.03459577567370721,
+    "control_rate": 0
+  }
+}
