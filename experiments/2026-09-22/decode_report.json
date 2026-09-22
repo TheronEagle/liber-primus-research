@@ -1,0 +1,17 @@
+{
+  "run_page47_values": [
+    16,
+    4,
+    27,
+    25,
+    0,
+    23
+  ],
+  "decoded_up": "VALBWH",
+  "decoded_down": "LLOUHK",
+  "reference_good_rate": 0.4090909090909091,
+  "dict_scores_up": 0,
+  "dict_scores_down": 0,
+  "random_control_up": 0,
+  "random_control_down": 0
+}
