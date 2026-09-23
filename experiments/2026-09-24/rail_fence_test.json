@@ -1,0 +1,65 @@
+{
+  "best": {
+    "num_rails": 2,
+    "rate": 0.045520757465404224,
+    "hits": 125,
+    "total_words": 2746
+  },
+  "all_results": [
+    {
+      "num_rails": 2,
+      "hits": 125,
+      "total_words": 2746,
+      "rate": 0.045520757465404224
+    },
+    {
+      "num_rails": 3,
+      "hits": 106,
+      "total_words": 2746,
+      "rate": 0.03860160233066278
+    },
+    {
+      "num_rails": 4,
+      "hits": 112,
+      "total_words": 2746,
+      "rate": 0.04078659868900218
+    },
+    {
+      "num_rails": 5,
+      "hits": 86,
+      "total_words": 2746,
+      "rate": 0.031318281136198105
+    },
+    {
+      "num_rails": 6,
+      "hits": 99,
+      "total_words": 2746,
+      "rate": 0.03605243991260015
+    },
+    {
+      "num_rails": 7,
+      "hits": 87,
+      "total_words": 2746,
+      "rate": 0.03168244719592134
+    },
+    {
+      "num_rails": 8,
+      "hits": 91,
+      "total_words": 2746,
+      "rate": 0.033139111434814274
+    },
+    {
+      "num_rails": 9,
+      "hits": 115,
+      "total_words": 2746,
+      "rate": 0.041879096868171886
+    },
+    {
+      "num_rails": 10,
+      "hits": 95,
+      "total_words": 2746,
+      "rate": 0.03459577567370721
+    }
+  ],
+  "reference_rate": 0.4090909090909091
+}

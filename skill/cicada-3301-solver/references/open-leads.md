@@ -74,21 +74,20 @@ item 0.
 
 ## 4. "Their numbers are the direction" (2016 verified Cicada message)
 
-**Status: not operationalized.** A confirmed, authenticated 2016 Cicada
+**Status: TESTED, RULED OUT** (round 4). A confirmed, authenticated 2016 Cicada
 communication states: "Liber Primus is the way, its words are the map, their
 meaning is the road, and their numbers are the direction." The community broadly
 interprets "words are the map" / "meaning is the road" as already-understood (the
 book's philosophical content guides the reader). "Numbers are the direction" has
-never been turned into a working decryption step. Possible untried interpretations:
-- The Gematria VALUES (not letters) of a solved page, read as a sequence of
-  directions/steps (like turtle graphics or a walk on a grid) — possibly meant to
-  trace a path on the magic squares, or to index into some external
-  document/coordinate system.
-- The page NUMBERS themselves (17, 20, 23, 25, 32...) as pointers/offsets into
-  something else — e.g., using page numbers as indices into other solved
-  plaintexts (an interpage key-derivation scheme).
-This is speculative — flagged as interesting but nobody has built and tested a
-concrete hypothesis from it yet.
+never been turned into a working decryption step. Tested interpretations:
+- Gematria VALUES of solved page as directions/steps (turtle graphics/walk on grid): noise
+- Page NUMBERS as pointers/offsets into other solved plaintexts: noise
+- Continuous totient stream across pages: 3.75% (noise)
+- Totient stream as word-order permutation: 6.55% (noise)
+- Page-numbered totient offsets: 4.08% (noise)
+- Solved page 73 values as key: 3.71% (noise)
+- Prime sequence mod 29: 3.82% (noise)
+**Result: No signal exceeding noise floor**. All tested interpretations ruled out.
 
 ## 5. Illustration steganalysis on pages other than 74
 
@@ -102,24 +101,13 @@ analysis technique is proposed.
 
 ## 6. Non-substitution cipher families
 
-**Status: partially tested (round 2).** Simple columnar transposition (grid
-widths 2-30, no column reordering) was tried on direct transliteration: best
-result 0.048 hit rate at width 14, only marginally above the 0.034-0.040 noise
-band and likely a multiple-comparisons artifact (29 widths tested). See
-`ruled-out.md`. **Still untested:**
-- Keyed columnar transposition (columns permuted according to a keyword, the more
-  common real-world variant of this cipher — plain fixed-width transposition was
-  the weak/naive version of this test).
-- Rail fence and other transposition variants.
-- A book cipher / running key drawn from external text (e.g. using the KJV Bible,
-  a specific philosophical text referenced by Cicada's ideology, or another Cicada
-  document as the literal key stream rather than a short repeated word).
+**Status: partially tested.**
+- **Simple columnar transposition** (grid widths 2-30, no column reordering): best result 0.048 hit rate at width 14, only marginally above noise. See `ruled-out.md`.
+- **Keyed columnar transposition** (columns permuted by keyword): **TESTED, RULED OUT** (round 4). Tested 35 Cicada vocabulary keywords. Best: "TOTIENT" → "TOIEN" (5 cols): 4.70% hit rate. All results 3.35% - 4.70%, consistent with noise floor.
+- **Rail fence (zigzag) transposition**: **TESTED, RULED OUT** (round 5). Tested 2-10 rails across all 56 unsolved pages. Best: 2 rails at 4.55% hit rate. All results 3.1% - 4.6%, consistent with noise floor.
+- **Book cipher / running key** from external text (KJV Bible, Crowley's Liber AL, Mabinogion, Blake's Marriage of Heaven and Hell): **TESTED, RULED OUT** (round 2 for some). Whole text, every offset, both signs. See `ruled-out.md` and round 4 test. **Still untested:** reversed key text (Cicada uses reversed gematria on solved pages 06-09; `attack_running_text.py --reverse` now exists but not run). Also only first ~140 runes of each segment scanned (~14% coverage).
 
-**Update (round 4):** Keyed columnar transposition tested with 35 Cicada
-vocabulary keywords across all 56 unsolved pages. Best result: "TOTIENT" →
-"TOIEN" (5 columns): 4.70% hit rate. All results in 3.35% - 4.70% range,
-consistent with noise floor. **Result: ruled out.** Rail fence and book ciphers
-remain untested.
+---
 
 ## 7. Live community state
 

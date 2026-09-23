@@ -1,6 +1,12 @@
 # Research Updates
 
-## 2026-09-24
+## 2026-09-24 (continued)
+- **Rail Fence Transposition Test (Open-Leads #6 - remaining)**: Tested rail fence (zigzag) transposition with 2-10 rails across all 56 unsolved pages.
+  - Best result: 2 rails: 4.55% hit rate (125/2746 words)
+  - Second best: 9 rails: 4.19%, 4 rails: 4.08%
+  - All results in 3.1% - 4.6% range, consistent with noise floor (3-4% established in `ruled-out.md`).
+  - **Result: No signal exceeding noise floor**. Rail fence transposition ruled out.
+
 - **Illustration Steganalysis (Open-Leads #5)**: Analyzed pages 8-14, 32, 55 for hidden data in illustrations using connected-component and nearest-neighbor spacing analysis (replicating page 74 methodology from ruled-out.md).
   - **Page 8**: 360 small components, NN distance mean=37.3, std=48.0
   - **Page 9**: 283 small components, NN distance mean=42.0, std=54.2
