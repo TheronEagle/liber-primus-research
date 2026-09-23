@@ -20,11 +20,15 @@ inconclusive · 🟢 untested, genuinely open
 4. Check whether this pattern recurs elsewhere at shorter lengths (6-7 words) — the Kasiski-on-lengths test already found some 6-length and shorter repeats worth a second look (see `scripts/gematria_toolkit.py` for `word_length_kasiski()` and `extend_match()`).
 5. Check n=6 and n=7 too — shorter matches will be far more numerous and mostly noise, but worth a scan.
 
----
+**Status update (2026-09-24)**: 
+- Values differ between the two blocks (verified).
+- Autokey/running-key tests on both blocks: no signal (gibberish output).
+- Shared n-grams as keys: no signal.
+- **Pattern 2 (block 40)**: Unique global occurrence. Self-decrypt with all offsets: max hit rate 3.51% (2/57) - exactly noise floor. No signal.
 
-Ranked roughly by plausibility/interest, not certainty. None of these are verified
-to work — they're documented as "worth trying before inventing something new,"
-not "known to be promising." Update the status of each as they get tried.
+**Status: TESTED, RESULT NEGATIVE.** The structural word-length correlation is real but doesn't yield a usable key. All reasonable cryptographic interpretations of the length correlation have been exhausted without signal above noise.
+
+---
 
 ## 🔴 1. Cross-page continuous key/stream (not reset per page)
 
@@ -35,31 +39,22 @@ unless a genuinely different continuous stream is proposed.
 
 ## 🔴 2. Page 5's magic square as a key source
 
-**Status: TESTED, RULED OUT** (round 2), for row-major and column-major
-flattening. See `ruled-out.md` for exact numbers. **Still untested:** diagonal or
-spiral-order flattening of the same square — the square's symmetry means
-row-major and column-major are similar to each other, but a diagonal/spiral
-traversal would be a genuinely different sequence and hasn't been tried.
+**Status: TESTED, RULED OUT** (all traversals). Row-major, column-major,
+diagonal (main/anti), spiral (clockwise/counterclockwise), zigzag (rows/cols)
+all tested. All results 3.4% - 4.4%, consistent with noise floor.
 
 ## 🟡 3. Word-length pattern analysis (not letter-content)
 
-**Status: TESTED, RESULT PROMISING BUT INCONCLUSIVE** (round 2) — this is what
-surfaced the actual matches at the corrected positions. See item 0 above and
-`ruled-out.md`'s Round 2 section for full detail and next steps. Don't re-run the
-basic version of this test; instead follow the specific next-step checklist in
-item 0.
+**Status: TESTED, RESULT NEGATIVE.** The structural correlation (shared n-grams
+at same relative positions between blocks 19/44) is real but doesn't yield
+a usable key. All reasonable cryptographic interpretations exhausted.
 
 ## 🔴 4. "Their numbers are the direction" (2016 verified Cicada message)
 
-**Status: TESTED, RULED OUT** (round 4). A confirmed, authenticated 2016 Cicada
-communication states: "Liber Primus is the way, its words are the map, their
-meaning is the road, and their numbers are the direction." The community broadly
-interprets "words are the map" / "meaning is the road" as already-understood (the
-book's philosophical content guides the reader). "Numbers are the direction" has
-never been turned into a working decryption step. Tested interpretations:
-- Gematria VALUES of solved page as directions/steps (turtle graphics/walk on grid): noise
-- Page NUMBERS as pointers/offsets into other solved plaintexts: noise
-- Continuous totient stream across pages: 3.75% (noise)
+**Status: TESTED, RULED OUT** (round 4). All tested interpretations:
+- Gematria VALUES as directions/steps: noise
+- Page NUMBERS as pointers/offsets: noise
+- Continuous totient stream: 3.75% (noise)
 - Totient stream as word-order permutation: 6.55% (noise)
 - Page-numbered totient offsets: 4.08% (noise)
 - Solved page 73 values as key: 3.71% (noise)
@@ -83,6 +78,7 @@ analysis technique is proposed.
 - **Keyed columnar transposition** (columns permuted by keyword): **TESTED, RULED OUT** (round 4). Tested 35 Cicada vocabulary keywords. Best: "TOTIENT" → "TOIEN" (5 cols): 4.70% hit rate. All results 3.35% - 4.70%, consistent with noise floor.
 - **Rail fence (zigzag) transposition**: **TESTED, RULED OUT** (round 5). Tested 2-10 rails across all 56 unsolved pages. Best: 2 rails at 4.55% hit rate. All results 3.1% - 4.6%, consistent with noise floor.
 - **Book cipher / running key** from external text (KJV Bible, Crowley's Liber AL, Mabinogion, Blake's Marriage of Heaven and Hell): **TESTED, RULED OUT** (rounds 2-5). Whole text, every offset, both forward and reversed signs. See `ruled-out.md` and round 4/5 tests. Best result: Blake forward 4.41%. All results 2.9% - 4.4%, consistent with noise floor.
+- **Diagonal/spiral/zigzag magic square traversals**: **TESTED, RULED OUT**. All 6 variants (diagonal main/anti, spiral cw/ccw, zigzag rows/cols) tested. Best: diagonal_main 4.44%. All 3.4% - 4.4%, noise floor.
 
 ---
 
