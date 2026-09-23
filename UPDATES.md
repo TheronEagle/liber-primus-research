@@ -1,7 +1,26 @@
 # Research Updates
 
+## 2026-09-24
+- **Illustration Steganalysis (Open-Leads #5)**: Analyzed pages 8-14, 32, 55 for hidden data in illustrations using connected-component and nearest-neighbor spacing analysis (replicating page 74 methodology from ruled-out.md).
+  - **Page 8**: 360 small components, NN distance mean=37.3, std=48.0
+  - **Page 9**: 283 small components, NN distance mean=42.0, std=54.2
+  - **Page 10**: 643 small components, NN distance mean=34.1, std=41.2
+  - **Page 11**: 531 small components, NN distance mean=39.4, std=44.6
+  - **Page 12**: 524 small components, NN distance mean=37.7, std=41.6
+  - **Page 13**: 428 small components, NN distance mean=39.8, std=46.0
+  - **Page 14**: 141 small components, NN distance mean=69.0, std=52.8
+  - **Page 32**: 83 small components, NN distance mean=84.3, std=82.0 (sparse, larger components)
+  - **Page 55**: 77 small components, NN distance mean=100.1, std=77.5 (very sparse)
+  
+  **Comparison with page 74 (from ruled-out.md)**: Page 74 had 624 components with sizes 517-620 for trunk components, NN histogram smoothly decaying from 76 pairs at ~6.7px to 1 pair at ~76px - consistent with natural/stochastic process.
+  
+  **Our findings**: The unsolved pages show similar characteristics - component sizes vary but all show smoothly decaying NN distance histograms consistent with natural/stochastic point processes. No sharp peaks at fixed spacings (which would indicate Braille-style or binary-grid encoding). Pages 32 and 55 have fewer/sparser small components but their histograms are still smooth.
+  
+  **Result: No evidence of hidden structure in these illustrations.** Consistent with page 74 finding - the artwork appears to be natural/stochastic stippling, not data-encoded.
+
+- **Baseline hit rate for raw transliteration**: 6.41% (176/2746 words) - higher than Vigenère noise floor (3-4%) but far below 41% benchmark.
+
 ## 2026-09-23 (continued)
-- **Baseline hit rate for raw transliteration**: 6.41% (176/2746 words) - this is higher than the Vigenère noise floor (3-4%) but far below the 41% benchmark from page 73.
 - **"Numbers as direction" tests (Open-Leads #4)**: Tested multiple interpretations of the 2016 Cicada message "their numbers are the direction":
   - Continuous totient stream across pages: 3.75% (noise)
   - Totient stream as word-order permutation: 6.55% (interesting but still noise-level)
@@ -9,7 +28,6 @@
   - Solved page 73 values as key: 3.71% (noise)
   - Prime sequence mod 29: 3.82% (noise)
   - **Result: No signal exceeding noise floor**. All "numbers as direction" interpretations tested so far ruled out.
-  - Note: The word-permutation test (6.55%) is closer to raw baseline (6.41%) than to 41% benchmark.
 
 - **Keyed Columnar Transposition Test (Open-Leads #6)**: Tested standard keyed columnar transposition with 35 Cicada vocabulary keywords across all 56 unsolved pages.
   - Best result: "TOTIENT" → "TOIEN" (5 columns): 4.70% hit rate (129/2746 words)
