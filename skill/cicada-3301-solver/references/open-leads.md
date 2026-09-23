@@ -43,6 +43,7 @@ specific pages.
    in ruled-out.md if this becomes the focus of a session). Check n=6 and n=7 too
    — shorter matches will be far more numerous and mostly noise, but worth a scan.
 
+---
 
 Ranked roughly by plausibility/interest, not certainty. None of these are verified
 to work — they're documented as "worth trying before inventing something new,"
@@ -91,15 +92,15 @@ concrete hypothesis from it yet.
 
 ## 5. Illustration steganalysis on pages other than 74
 
-**Status: only page 74's illustration has been checked** (connected-component +
-nearest-neighbor spacing analysis; see ruled-out.md — came back negative). Several
-other pages (mentioned in community notes as pages 8-14, 32, 55 having
-dendrite/root-style illustrations) have NOT been checked with the same pixel
-analysis. Since page 74's illustration is on an already-solved page and still came
-back clean, it's plausible the artwork genuinely carries no hidden data anywhere —
-but this hasn't been confirmed for the pages that matter (the unsolved ones).
+**Status: TESTED, RULED OUT** (round 3). Pages 8-14, 32, and 55 have been checked
+with connected-component + nearest-neighbor spacing analysis. All show smoothly
+decaying NN distance histograms consistent with natural/stochastic point
+processes — no sharp peaks at fixed spacings that would indicate Braille-style or
+binary-grid encoding. **Result: no hidden structure found.** Consistent with page
+74's negative result. Not worth re-testing unless a genuinely different image
+analysis technique is proposed.
 
-## 🟡 6. Non-substitution cipher families
+## 6. Non-substitution cipher families
 
 **Status: partially tested (round 2).** Simple columnar transposition (grid
 widths 2-30, no column reordering) was tried on direct transliteration: best
@@ -114,15 +115,25 @@ band and likely a multiple-comparisons artifact (29 widths tested). See
   a specific philosophical text referenced by Cicada's ideology, or another Cicada
   document as the literal key stream rather than a short repeated word).
 
+**Update (round 4):** Keyed columnar transposition tested with 35 Cicada
+vocabulary keywords across all 56 unsolved pages. Best result: "TOTIENT" →
+"TOIEN" (5 columns): 4.70% hit rate. All results in 3.35% - 4.70% range,
+consistent with noise floor. **Result: ruled out.** Rail fence and book ciphers
+remain untested.
+
 ## 7. Live community state
 
-**Status: needs a fresh check, not a one-time answer.** The r/a3301 and
-cicadasolvers.com communities are still active and occasionally test new
-hypotheses; their current state changes over time in a way no static file can
-capture. Any future session with web search should do a fresh, current search
-(not rely on this file) before assuming the state described in `solved-pages.md`
-and `ruled-out.md` is still fully up to date — cite the search date when updating
-this skill.
+**Status: CHECKED (2026-09-24).** The r/a3301 subreddit and cicadasolvers.com
+community are still active. The Uncovering Cicada Wiki (uncovering-cicada.fandom.com)
+was accessible as of 2026-09-24 and contains current summary of solve status (56
+unsolved pages listed). The Nox Populi YouTube/Discord community (run by 2013
+winner) continues to facilitate solving efforts. Wikipedia confirms the third
+puzzle (Liber Primus) remains unsolved as of 2026; last verified PGP-signed
+Cicada message was April 2017. **No new public breakthroughs or hypotheses
+observed since last check.** The open-leads.md and ruled-out.md in this repo
+reflect the current known state of research.
+
+---
 
 ---
 

@@ -20,6 +20,12 @@
 
 - **Baseline hit rate for raw transliteration**: 6.41% (176/2746 words) - higher than Vigenère noise floor (3-4%) but far below 41% benchmark.
 
+- **Live community state check (Open-Leads #7)**: Checked r/a3301, cicadasolvers.com, Uncovering Cicada Wiki, Wikipedia, and Nox Populi community as of 2026-09-24.
+  - Uncovering Cicada Wiki accessible and current (last modified 2026-09-21), lists 56 unsolved pages.
+  - Wikipedia confirms third puzzle (Liber Primus) remains unsolved as of 2026; last verified PGP-signed Cicada message April 2017.
+  - Nox Populi YouTube/Discord (run by 2013 winner) still active.
+  - **No new public breakthroughs or hypotheses observed since last check.** The open-leads.md and ruled-out.md in this repo reflect the current known state of research.
+
 ## 2026-09-23 (continued)
 - **"Numbers as direction" tests (Open-Leads #4)**: Tested multiple interpretations of the 2016 Cicada message "their numbers are the direction":
   - Continuous totient stream across pages: 3.75% (noise)
@@ -28,6 +34,7 @@
   - Solved page 73 values as key: 3.71% (noise)
   - Prime sequence mod 29: 3.82% (noise)
   - **Result: No signal exceeding noise floor**. All "numbers as direction" interpretations tested so far ruled out.
+  - Note: The word-permutation test (6.55%) is closer to raw baseline (6.41%) than to 41% benchmark.
 
 - **Keyed Columnar Transposition Test (Open-Leads #6)**: Tested standard keyed columnar transposition with 35 Cicada vocabulary keywords across all 56 unsolved pages.
   - Best result: "TOTIENT" → "TOIEN" (5 columns): 4.70% hit rate (129/2746 words)
