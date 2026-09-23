@@ -4,12 +4,17 @@
 - **Critical Finding: Open-Leads #0 positions were incorrect**
   - The target pattern `[6,7,6,3,6,4,3,3]` was claimed at page 22 word 45 and page 47 word 11
   - **Actual finding**: The pattern does NOT occur at those positions
-  - **Real locations**: Pattern occurs exactly 2 times globally:
+  - **Real locations**: Pattern occurs exactly **2 times globally**:
     - Block 19 (page ~36), local word 47
     - Block 44 (page ~61), local word 12
   - Second target `[5,4,7,3,6,3,7,4]` claimed at pages 43/58
-  - **Real location**: Exactly 1 occurrence at block 40 (page ~57), local word 42
-  
+  - **Real location**: Occurs exactly **1 time globally** at Block 40 (page ~57), local word 42
+
+- **Deep analysis of ACTUAL matches (2026-09-24):**
+  - **Pattern 1** (blocks 19 & 44): Word-lengths match perfectly (8-word run), but Gematria VALUES differ. They share 3 n=6-grams and 2 n=7-grams at the SAME relative positions - strong structural correlation but different ciphertext.
+  - **Pattern 2** (block 40): **Unique global occurrence** of `[5,4,7,3,6,3,7,4]` - only happens ONCE in the entire corpus! This is extremely significant.
+  - Kasiski analysis shows blocks 19 & 44 share 3 n=6-grams and 2 n=7-grams at the SAME relative positions - strong structural correlation but different ciphertext.
+
 - **Rail Fence Transposition Test (Open-Leads #6 - remaining)**: Tested rail fence (zigzag) transposition with 2-10 rails across all 56 unsolved pages.
   - Best result: 2 rails: 4.55% hit rate (125/2746 words)
   - Second best: 9 rails: 4.19%, 4 rails: 4.08%
