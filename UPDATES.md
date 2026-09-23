@@ -1,7 +1,15 @@
 # Research Updates
 
 ## 2026-09-23
-- **Magic square traversal test (Open-Leads #2)**: Tested diagonal, anti-diagonal, and spiral orderings of the page 5 magic square as Vigenère keys across all 56 unsolved pages.
+- **Keyed Columnar Transposition Test (Open-Leads #6)**: Tested standard keyed columnar transposition with 35 Cicada vocabulary keywords across all 56 unsolved pages.
+  - Best result: "TOTIENT" → "TOIEN" (5 columns): 4.70% hit rate (129/2746 words)
+  - Second best: "SHADOW" (6 cols): 4.55%, "DEATH" (5 cols): 4.59%
+  - All results in 3.35% - 4.70% range, consistent with noise floor (3-4% established in `ruled-out.md`)
+  - Random control baseline: 0%
+  - **Result: No signal exceeding noise floor**. All keyword/column combinations ruled out.
+  - Next steps: Move to next open lead.
+
+- **Magic Square Traversal Test (Open-Leads #2)**: Tested diagonal, anti-diagonal, and spiral orderings of the page 5 magic square as Vigenère keys across all 56 unsolved pages.
   - Diagonal: 4.44% hit rate (up), 3.71% (down)
   - Anti-diagonal: 3.53% (up), 3.61% (down)  
   - Spiral: 3.90% (up), 3.46% (down)
@@ -9,7 +17,7 @@
   - **Result: No signal exceeding noise floor**. All three traversal orderings ruled out.
   - Next steps: Move to next open lead.
 
-- **Autokey decode test (Open-Leads #0 follow-up)**: Used page 22 word 45 run as key to decode page 47 word 11 run.
+- **Autokey Decode Test (Open-Leads #0 follow-up)**: Used page 22 word 45 run as key to decode page 47 word 11 run.
   - Shift-up decode: `VALBWH` (6 chars) — 0 dictionary hits (0%).
   - Shift-down decode: `LLOUHK` (6 chars) — 0 dictionary hits (0%).
   - Both well below 41% benchmark from page 73.

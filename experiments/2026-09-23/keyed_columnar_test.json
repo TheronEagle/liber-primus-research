@@ -1,0 +1,374 @@
+{
+  "best": {
+    "keyword": "TOTIENT",
+    "clean_keyword": "TOIEN",
+    "num_cols": 5,
+    "rate": 0.04697742170429716,
+    "hits": 129,
+    "total_words": 2746
+  },
+  "all_results": [
+    {
+      "keyword": "DIVINITY",
+      "clean_keyword": "DIVNTY",
+      "num_cols": 6,
+      "hits": 114,
+      "total_words": 2746,
+      "rate": 0.041514930808448654
+    },
+    {
+      "keyword": "FIRFUMFERENFE",
+      "clean_keyword": "FIRUMEN",
+      "num_cols": 7,
+      "hits": 100,
+      "total_words": 2746,
+      "rate": 0.03641660597232338
+    },
+    {
+      "keyword": "INSTAR",
+      "clean_keyword": "INSTAR",
+      "num_cols": 6,
+      "hits": 102,
+      "total_words": 2746,
+      "rate": 0.037144938091769844
+    },
+    {
+      "keyword": "EMERGE",
+      "clean_keyword": "EMRG",
+      "num_cols": 4,
+      "hits": 114,
+      "total_words": 2746,
+      "rate": 0.041514930808448654
+    },
+    {
+      "keyword": "PRIMALITY",
+      "clean_keyword": "PRIMALTY",
+      "num_cols": 8,
+      "hits": 88,
+      "total_words": 2746,
+      "rate": 0.032046613255644577
+    },
+    {
+      "keyword": "SACRED",
+      "clean_keyword": "SACRED",
+      "num_cols": 6,
+      "hits": 109,
+      "total_words": 2746,
+      "rate": 0.039694100509832485
+    },
+    {
+      "keyword": "TOTIENT",
+      "clean_keyword": "TOIEN",
+      "num_cols": 5,
+      "hits": 129,
+      "total_words": 2746,
+      "rate": 0.04697742170429716
+    },
+    {
+      "keyword": "PILGRIM",
+      "clean_keyword": "PILGRM",
+      "num_cols": 6,
+      "hits": 103,
+      "total_words": 2746,
+      "rate": 0.03750910415149308
+    },
+    {
+      "keyword": "PARABLE",
+      "clean_keyword": "PARBLE",
+      "num_cols": 6,
+      "hits": 110,
+      "total_words": 2746,
+      "rate": 0.04005826656955572
+    },
+    {
+      "keyword": "WISDOM",
+      "clean_keyword": "WISDOM",
+      "num_cols": 6,
+      "hits": 109,
+      "total_words": 2746,
+      "rate": 0.039694100509832485
+    },
+    {
+      "keyword": "CICADA",
+      "clean_keyword": "CIAD",
+      "num_cols": 4,
+      "hits": 92,
+      "total_words": 2746,
+      "rate": 0.033503277494537506
+    },
+    {
+      "keyword": "PRIME",
+      "clean_keyword": "PRIME",
+      "num_cols": 5,
+      "hits": 107,
+      "total_words": 2746,
+      "rate": 0.03896576839038601
+    },
+    {
+      "keyword": "PRIMES",
+      "clean_keyword": "PRIMES",
+      "num_cols": 6,
+      "hits": 96,
+      "total_words": 2746,
+      "rate": 0.03495994173343044
+    },
+    {
+      "keyword": "KOAN",
+      "clean_keyword": "KOAN",
+      "num_cols": 4,
+      "hits": 92,
+      "total_words": 2746,
+      "rate": 0.033503277494537506
+    },
+    {
+      "keyword": "WARNING",
+      "clean_keyword": "WARNIG",
+      "num_cols": 6,
+      "hits": 119,
+      "total_words": 2746,
+      "rate": 0.04333576110706482
+    },
+    {
+      "keyword": "SHADOW",
+      "clean_keyword": "SHADOW",
+      "num_cols": 6,
+      "hits": 125,
+      "total_words": 2746,
+      "rate": 0.045520757465404224
+    },
+    {
+      "keyword": "TRUTH",
+      "clean_keyword": "TRUH",
+      "num_cols": 4,
+      "hits": 107,
+      "total_words": 2746,
+      "rate": 0.03896576839038601
+    },
+    {
+      "keyword": "DEATH",
+      "clean_keyword": "DEATH",
+      "num_cols": 5,
+      "hits": 126,
+      "total_words": 2746,
+      "rate": 0.045884923525127456
+    },
+    {
+      "keyword": "BOOK",
+      "clean_keyword": "BOK",
+      "num_cols": 3,
+      "hits": 109,
+      "total_words": 2746,
+      "rate": 0.039694100509832485
+    },
+    {
+      "keyword": "CIRCUMFERENCE",
+      "clean_keyword": "CIRUMFEN",
+      "num_cols": 8,
+      "hits": 114,
+      "total_words": 2746,
+      "rate": 0.041514930808448654
+    },
+    {
+      "keyword": "CONSUMPTION",
+      "clean_keyword": "CONSUMPTI",
+      "num_cols": 9,
+      "hits": 111,
+      "total_words": 2746,
+      "rate": 0.04042243262927895
+    },
+    {
+      "keyword": "PRESERVATION",
+      "clean_keyword": "PRESVATION",
+      "num_cols": 10,
+      "hits": 112,
+      "total_words": 2746,
+      "rate": 0.04078659868900218
+    },
+    {
+      "keyword": "ADHERENCE",
+      "clean_keyword": "ADHERNC",
+      "num_cols": 7,
+      "hits": 99,
+      "total_words": 2746,
+      "rate": 0.03605243991260015
+    },
+    {
+      "keyword": "BELONG",
+      "clean_keyword": "BELONG",
+      "num_cols": 6,
+      "hits": 109,
+      "total_words": 2746,
+      "rate": 0.039694100509832485
+    },
+    {
+      "keyword": "REALITY",
+      "clean_keyword": "REALITY",
+      "num_cols": 7,
+      "hits": 105,
+      "total_words": 2746,
+      "rate": 0.03823743627093955
+    },
+    {
+      "keyword": "ILLUSION",
+      "clean_keyword": "ILUSON",
+      "num_cols": 6,
+      "hits": 95,
+      "total_words": 2746,
+      "rate": 0.03459577567370721
+    },
+    {
+      "keyword": "SURFACE",
+      "clean_keyword": "SURFACE",
+      "num_cols": 7,
+      "hits": 96,
+      "total_words": 2746,
+      "rate": 0.03495994173343044
+    },
+    {
+      "keyword": "TUNNELING",
+      "clean_keyword": "TUNELIG",
+      "num_cols": 7,
+      "hits": 103,
+      "total_words": 2746,
+      "rate": 0.03750910415149308
+    },
+    {
+      "keyword": "WITHIN",
+      "clean_keyword": "WITHN",
+      "num_cols": 5,
+      "hits": 118,
+      "total_words": 2746,
+      "rate": 0.04297159504734159
+    },
+    {
+      "keyword": "WITHOUT",
+      "clean_keyword": "WITHOU",
+      "num_cols": 6,
+      "hits": 96,
+      "total_words": 2746,
+      "rate": 0.03495994173343044
+    },
+    {
+      "keyword": "SELF",
+      "clean_keyword": "SELF",
+      "num_cols": 4,
+      "hits": 107,
+      "total_words": 2746,
+      "rate": 0.03896576839038601
+    },
+    {
+      "keyword": "BEING",
+      "clean_keyword": "BEING",
+      "num_cols": 5,
+      "hits": 101,
+      "total_words": 2746,
+      "rate": 0.03678077203204661
+    },
+    {
+      "keyword": "LAW",
+      "clean_keyword": "LAW",
+      "num_cols": 3,
+      "hits": 108,
+      "total_words": 2746,
+      "rate": 0.03932993445010925
+    },
+    {
+      "keyword": "HOLY",
+      "clean_keyword": "HOLY",
+      "num_cols": 4,
+      "hits": 106,
+      "total_words": 2746,
+      "rate": 0.03860160233066278
+    },
+    {
+      "keyword": "LIBERPRIMUS",
+      "clean_keyword": "LIBERPMUS",
+      "num_cols": 9,
+      "hits": 102,
+      "total_words": 2746,
+      "rate": 0.037144938091769844
+    },
+    {
+      "keyword": "GEMATRIA",
+      "clean_keyword": "GEMATRI",
+      "num_cols": 7,
+      "hits": 120,
+      "total_words": 2746,
+      "rate": 0.043699927166788055
+    },
+    {
+      "keyword": "INSTRUCTION",
+      "clean_keyword": "INSTRUCO",
+      "num_cols": 8,
+      "hits": 102,
+      "total_words": 2746,
+      "rate": 0.037144938091769844
+    },
+    {
+      "keyword": "JOURNEY",
+      "clean_keyword": "JOURNEY",
+      "num_cols": 7,
+      "hits": 114,
+      "total_words": 2746,
+      "rate": 0.041514930808448654
+    },
+    {
+      "keyword": "ENLIGHTENED",
+      "clean_keyword": "ENLIGHTD",
+      "num_cols": 8,
+      "hits": 99,
+      "total_words": 2746,
+      "rate": 0.03605243991260015
+    },
+    {
+      "keyword": "MASTER",
+      "clean_keyword": "MASTER",
+      "num_cols": 6,
+      "hits": 121,
+      "total_words": 2746,
+      "rate": 0.04406409322651129
+    },
+    {
+      "keyword": "STUDENT",
+      "clean_keyword": "STUDEN",
+      "num_cols": 6,
+      "hits": 99,
+      "total_words": 2746,
+      "rate": 0.03605243991260015
+    },
+    {
+      "keyword": "CONSCIOUSNESS",
+      "clean_keyword": "CONSIUE",
+      "num_cols": 7,
+      "hits": 107,
+      "total_words": 2746,
+      "rate": 0.03896576839038601
+    },
+    {
+      "keyword": "QUESTION",
+      "clean_keyword": "QUESTION",
+      "num_cols": 8,
+      "hits": 104,
+      "total_words": 2746,
+      "rate": 0.037873270211216316
+    },
+    {
+      "keyword": "PROGRAM",
+      "clean_keyword": "PROGAM",
+      "num_cols": 6,
+      "hits": 120,
+      "total_words": 2746,
+      "rate": 0.043699927166788055
+    },
+    {
+      "keyword": "MIND",
+      "clean_keyword": "MIND",
+      "num_cols": 4,
+      "hits": 107,
+      "total_words": 2746,
+      "rate": 0.03896576839038601
+    }
+  ],
+  "control_rate": 0,
+  "reference_rate": 0.4090909090909091
+}
