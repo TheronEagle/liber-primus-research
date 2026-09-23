@@ -72,7 +72,7 @@ surfaced the page 22 / page 47 match at the top of this file. See item 0 above a
 basic version of this test; instead follow the specific next-step checklist in
 item 0.
 
-## 4. "Their numbers are the direction" (2016 verified Cicada message)
+## 🔴 4. "Their numbers are the direction" (2016 verified Cicada message)
 
 **Status: TESTED, RULED OUT** (round 4). A confirmed, authenticated 2016 Cicada
 communication states: "Liber Primus is the way, its words are the map, their
@@ -89,7 +89,7 @@ never been turned into a working decryption step. Tested interpretations:
 - Prime sequence mod 29: 3.82% (noise)
 **Result: No signal exceeding noise floor**. All tested interpretations ruled out.
 
-## 5. Illustration steganalysis on pages other than 74
+## 🔴 5. Illustration steganalysis on pages other than 74
 
 **Status: TESTED, RULED OUT** (round 3). Pages 8-14, 32, and 55 have been checked
 with connected-component + nearest-neighbor spacing analysis. All show smoothly
@@ -99,13 +99,13 @@ binary-grid encoding. **Result: no hidden structure found.** Consistent with pag
 74's negative result. Not worth re-testing unless a genuinely different image
 analysis technique is proposed.
 
-## 6. Non-substitution cipher families
+## 🔴 6. Non-substitution cipher families
 
-**Status: partially tested.**
+**Status: TESTED, RULED OUT** (rounds 2-5).
 - **Simple columnar transposition** (grid widths 2-30, no column reordering): best result 0.048 hit rate at width 14, only marginally above noise. See `ruled-out.md`.
 - **Keyed columnar transposition** (columns permuted by keyword): **TESTED, RULED OUT** (round 4). Tested 35 Cicada vocabulary keywords. Best: "TOTIENT" → "TOIEN" (5 cols): 4.70% hit rate. All results 3.35% - 4.70%, consistent with noise floor.
 - **Rail fence (zigzag) transposition**: **TESTED, RULED OUT** (round 5). Tested 2-10 rails across all 56 unsolved pages. Best: 2 rails at 4.55% hit rate. All results 3.1% - 4.6%, consistent with noise floor.
-- **Book cipher / running key** from external text (KJV Bible, Crowley's Liber AL, Mabinogion, Blake's Marriage of Heaven and Hell): **TESTED, RULED OUT** (round 2 for some). Whole text, every offset, both signs. See `ruled-out.md` and round 4 test. **Still untested:** reversed key text (Cicada uses reversed gematria on solved pages 06-09; `attack_running_text.py --reverse` now exists but not run). Also only first ~140 runes of each segment scanned (~14% coverage).
+- **Book cipher / running key** from external text (KJV Bible, Crowley's Liber AL, Mabinogion, Blake's Marriage of Heaven and Hell): **TESTED, RULED OUT** (rounds 2-5). Whole text, every offset, both forward and reversed signs. See `ruled-out.md` and round 4/5 tests. Best result: Blake forward 4.41%. All results 2.9% - 4.4%, consistent with noise floor.
 
 ---
 

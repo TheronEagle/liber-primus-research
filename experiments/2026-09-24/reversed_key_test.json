@@ -1,0 +1,68 @@
+{
+  "best": {
+    "text": "Blake",
+    "direction": "forward",
+    "rate": 0.04406409322651129,
+    "hits": 121,
+    "total_words": 2746
+  },
+  "all_results": [
+    {
+      "text": "KJV",
+      "direction": "forward",
+      "hits": 98,
+      "total_words": 2746,
+      "rate": 0.035688273852876914
+    },
+    {
+      "text": "KJV",
+      "direction": "reversed",
+      "hits": 102,
+      "total_words": 2746,
+      "rate": 0.037144938091769844
+    },
+    {
+      "text": "Liber_AL",
+      "direction": "forward",
+      "hits": 113,
+      "total_words": 2746,
+      "rate": 0.04115076474872542
+    },
+    {
+      "text": "Liber_AL",
+      "direction": "reversed",
+      "hits": 81,
+      "total_words": 2746,
+      "rate": 0.029497450837581936
+    },
+    {
+      "text": "Mabinogion",
+      "direction": "forward",
+      "hits": 110,
+      "total_words": 2746,
+      "rate": 0.04005826656955572
+    },
+    {
+      "text": "Mabinogion",
+      "direction": "reversed",
+      "hits": 105,
+      "total_words": 2746,
+      "rate": 0.03823743627093955
+    },
+    {
+      "text": "Blake",
+      "direction": "forward",
+      "hits": 121,
+      "total_words": 2746,
+      "rate": 0.04406409322651129
+    },
+    {
+      "text": "Blake",
+      "direction": "reversed",
+      "hits": 102,
+      "total_words": 2746,
+      "rate": 0.037144938091769844
+    }
+  ],
+  "reference_rate": 0.4090909090909091
+}

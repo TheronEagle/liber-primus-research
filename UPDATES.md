@@ -1,6 +1,11 @@
 # Research Updates
 
 ## 2026-09-24 (continued)
+- **Reversed Key Text Test (Open-Leads #6 - remaining)**: Tested reversed key text as running key across all 56 unsolved pages (Cicada uses reversed gematria on solved pages 06-09). Tested 4 key texts (KJV, Liber AL, Mabinogion, Blake) in both forward and reversed directions.
+  - Best result: Blake forward: 4.41% (121/2746)
+  - All results: 2.9% - 4.41%, consistent with noise floor.
+  - **Result: No signal exceeding noise floor**. Reversed key text ruled out.
+
 - **Rail Fence Transposition Test (Open-Leads #6 - remaining)**: Tested rail fence (zigzag) transposition with 2-10 rails across all 56 unsolved pages.
   - Best result: 2 rails: 4.55% hit rate (125/2746 words)
   - Second best: 9 rails: 4.19%, 4 rails: 4.08%
