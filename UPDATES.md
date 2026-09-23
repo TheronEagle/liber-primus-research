@@ -1,16 +1,25 @@
 # Research Updates
 
-## 2026-09-24 (continued)
-- **Reversed Key Text Test (Open-Leads #6 - remaining)**: Tested reversed key text as running key across all 56 unsolved pages (Cicada uses reversed gematria on solved pages 06-09). Tested 4 key texts (KJV, Liber AL, Mabinogion, Blake) in both forward and reversed directions.
-  - Best result: Blake forward: 4.41% (121/2746)
-  - All results: 2.9% - 4.41%, consistent with noise floor.
-  - **Result: No signal exceeding noise floor**. Reversed key text ruled out.
-
+## 2026-09-24 (continued - deep analysis of Open-Leads #0)
+- **Critical Finding: Open-Leads #0 positions were incorrect**
+  - The target pattern `[6,7,6,3,6,4,3,3]` was claimed at page 22 word 45 and page 47 word 11
+  - **Actual finding**: The pattern does NOT occur at those positions
+  - **Real locations**: Pattern occurs exactly 2 times globally:
+    - Block 19 (page ~36), local word 47
+    - Block 44 (page ~61), local word 12
+  - Second target `[5,4,7,3,6,3,7,4]` claimed at pages 43/58
+  - **Real location**: Exactly 1 occurrence at block 40 (page ~57), local word 42
+  
 - **Rail Fence Transposition Test (Open-Leads #6 - remaining)**: Tested rail fence (zigzag) transposition with 2-10 rails across all 56 unsolved pages.
   - Best result: 2 rails: 4.55% hit rate (125/2746 words)
   - Second best: 9 rails: 4.19%, 4 rails: 4.08%
   - All results in 3.1% - 4.6% range, consistent with noise floor (3-4% established in `ruled-out.md`).
   - **Result: No signal exceeding noise floor**. Rail fence transposition ruled out.
+
+- **Reversed Key Text Test (Open-Leads #6 - remaining)**: Tested reversed key text as running key across all 56 unsolved pages (Cicada uses reversed gematria on solved pages 06-09). Tested 4 key texts (KJV, Liber AL, Mabinogion, Blake) in both forward and reversed directions.
+  - Best result: Blake forward: 4.41% (121/2746)
+  - All results: 2.9% - 4.41%, consistent with noise floor.
+  - **Result: No signal exceeding noise floor**. Reversed key text ruled out.
 
 - **Illustration Steganalysis (Open-Leads #5)**: Analyzed pages 8-14, 32, 55 for hidden data in illustrations using connected-component and nearest-neighbor spacing analysis (replicating page 74 methodology from ruled-out.md).
   - **Page 8**: 360 small components, NN distance mean=37.3, std=48.0

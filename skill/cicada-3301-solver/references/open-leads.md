@@ -3,45 +3,22 @@
 **Status legend:** 🔴 tested, ruled out (see ruled-out.md) · 🟡 partially tested,
 inconclusive · 🟢 untested, genuinely open
 
-## 🟢 0. HIGHEST PRIORITY — the page 22 / page 47 word-length match
+## 🟢 0. HIGHEST PRIORITY — the word-length match at ACTUAL positions
 
-A round-2 session found something worth prioritizing over everything else in this
-file: an 8-word-length run (`[6,7,6,3,6,4,3,3]`) that matches EXACTLY between word
-45 of page 22 and word 11 of page 47. Full details and the significance estimate
-are in `ruled-out.md`'s "Round 2 tests" section. This is the single most specific,
-concrete, checkable lead currently in this file — everything else here is a
-category of technique to try; this is an actual coordinate pointing at two
-specific pages.
+**IMPORTANT CORRECTION (2026-09-24)**: The original open-leads.md claimed the pattern `[6,7,6,3,6,4,3,3]` matched at page 22 word 45 and page 47 word 11. **This was incorrect.** Deep analysis shows:
+- The pattern `[6,7,6,3,6,4,3,3]` does NOT occur at those positions.
+- The pattern occurs exactly **2 times globally**:
+  - Block 19 (page ~36), local word 47
+  - Block 44 (page ~61), local word 12
+- The second pattern `[5,4,7,3,6,3,7,4]` was claimed at pages 43/58.
+- **Actual finding**: Occurs exactly **1 time globally** at Block 40 (page ~57), local word 42.
 
-**Concrete next steps, in order of cheapness:**
-1. Extract the exact rune sequences at page 22 word 45 (8 words) and page 47 word
-   11 (8 words). Compare their Gematria VALUES directly (not just lengths) —
-   if they're also identical or near-identical in values, that's a much stronger
-   signal than the length match alone and might mean these two spans are the
-   SAME plaintext phrase, which would let you solve for a page-specific key at
-   that location by assuming a probable-word crib (e.g. if it's a repeated
-   ritual phrase like "AS ABOVE SO BELOW" or similar cadence, an 8-word phrase
-   is a workable crib length).
-2. If the values differ, try an autokey/running-key test: use page 22's runes
-   (or their values) as the decryption key for page 47's corresponding region,
-   and vice versa, both directions.
-2. Check whether this pattern recurs elsewhere at shorter lengths (6-7 words) —
-   the Kasiski-on-lengths test already found some 6-length and shorter repeats
-   worth a second look (see raw output logged when this was run; re-run
-   `kasiski_on_seq` — not yet added to the toolkit script, only run ad hoc — on
-   the word-length sequence with n=6,7 and cross-reference all matches, not just
-   the longest one).
-3. `word_length_kasiski()` and `extend_match()` are now in
-   `scripts/gematria_toolkit.py` (added and verified working). Running
-   `word_length_kasiski(global_lens, ngram_lengths=(8,))` surfaced a SECOND
-   8-word-length match not caught in the first ad hoc pass: pattern
-   `[5,4,7,3,6,3,7,4]` shared between **page 43 and page 58**. Two independent
-   8-length matches existing in the same corpus somewhat raises the odds that at
-   least one is structurally real rather than coincidental (though it also means
-   there are more candidate windows, which cuts the other way statistically —
-   worth a more careful significance calculation than the back-of-envelope one
-   in ruled-out.md if this becomes the focus of a session). Check n=6 and n=7 too
-   — shorter matches will be far more numerous and mostly noise, but worth a scan.
+**Revised next steps for this lead:**
+1. Extract the exact rune sequences at the **ACTUAL** matching positions (block 19 word 47 and block 44 word 12).
+2. Compare their Gematria VALUES directly (not just lengths) — if they're also identical or near-identical in values, that's a much stronger signal.
+3. If the values differ, try an autokey/running-key test: use one page's runes (or their values) as the decryption key for the other page's corresponding region, and vice versa, both directions.
+4. Check whether this pattern recurs elsewhere at shorter lengths (6-7 words) — the Kasiski-on-lengths test already found some 6-length and shorter repeats worth a second look (see `scripts/gematria_toolkit.py` for `word_length_kasiski()` and `extend_match()`).
+5. Check n=6 and n=7 too — shorter matches will be far more numerous and mostly noise, but worth a scan.
 
 ---
 
@@ -67,7 +44,7 @@ traversal would be a genuinely different sequence and hasn't been tried.
 ## 🟡 3. Word-length pattern analysis (not letter-content)
 
 **Status: TESTED, RESULT PROMISING BUT INCONCLUSIVE** (round 2) — this is what
-surfaced the page 22 / page 47 match at the top of this file. See item 0 above and
+surfaced the actual matches at the corrected positions. See item 0 above and
 `ruled-out.md`'s Round 2 section for full detail and next steps. Don't re-run the
 basic version of this test; instead follow the specific next-step checklist in
 item 0.
