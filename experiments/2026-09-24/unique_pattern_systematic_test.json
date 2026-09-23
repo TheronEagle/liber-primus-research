@@ -1,0 +1,1012 @@
+{
+  "best": {
+    "test": "vigenere_reversed_rotated",
+    "offset": 21,
+    "rate": 0.04661325564457393,
+    "hits": 128,
+    "total_words": 2746
+  },
+  "all_results": [
+    {
+      "test": "vigenere_rotated",
+      "offset": 0,
+      "hits": 105,
+      "total_words": 2746,
+      "rate": 0.03823743627093955
+    },
+    {
+      "test": "vigenere_rotated",
+      "offset": 1,
+      "hits": 124,
+      "total_words": 2746,
+      "rate": 0.04515659140568099
+    },
+    {
+      "test": "vigenere_rotated",
+      "offset": 2,
+      "hits": 103,
+      "total_words": 2746,
+      "rate": 0.03750910415149308
+    },
+    {
+      "test": "vigenere_rotated",
+      "offset": 3,
+      "hits": 111,
+      "total_words": 2746,
+      "rate": 0.04042243262927895
+    },
+    {
+      "test": "vigenere_rotated",
+      "offset": 4,
+      "hits": 110,
+      "total_words": 2746,
+      "rate": 0.04005826656955572
+    },
+    {
+      "test": "vigenere_rotated",
+      "offset": 5,
+      "hits": 96,
+      "total_words": 2746,
+      "rate": 0.03495994173343044
+    },
+    {
+      "test": "vigenere_rotated",
+      "offset": 6,
+      "hits": 114,
+      "total_words": 2746,
+      "rate": 0.041514930808448654
+    },
+    {
+      "test": "vigenere_rotated",
+      "offset": 7,
+      "hits": 101,
+      "total_words": 2746,
+      "rate": 0.03678077203204661
+    },
+    {
+      "test": "vigenere_rotated",
+      "offset": 8,
+      "hits": 110,
+      "total_words": 2746,
+      "rate": 0.04005826656955572
+    },
+    {
+      "test": "vigenere_rotated",
+      "offset": 9,
+      "hits": 102,
+      "total_words": 2746,
+      "rate": 0.037144938091769844
+    },
+    {
+      "test": "vigenere_rotated",
+      "offset": 10,
+      "hits": 98,
+      "total_words": 2746,
+      "rate": 0.035688273852876914
+    },
+    {
+      "test": "vigenere_rotated",
+      "offset": 11,
+      "hits": 95,
+      "total_words": 2746,
+      "rate": 0.03459577567370721
+    },
+    {
+      "test": "vigenere_rotated",
+      "offset": 12,
+      "hits": 91,
+      "total_words": 2746,
+      "rate": 0.033139111434814274
+    },
+    {
+      "test": "vigenere_rotated",
+      "offset": 13,
+      "hits": 103,
+      "total_words": 2746,
+      "rate": 0.03750910415149308
+    },
+    {
+      "test": "vigenere_rotated",
+      "offset": 14,
+      "hits": 98,
+      "total_words": 2746,
+      "rate": 0.035688273852876914
+    },
+    {
+      "test": "vigenere_rotated",
+      "offset": 15,
+      "hits": 108,
+      "total_words": 2746,
+      "rate": 0.03932993445010925
+    },
+    {
+      "test": "vigenere_rotated",
+      "offset": 16,
+      "hits": 105,
+      "total_words": 2746,
+      "rate": 0.03823743627093955
+    },
+    {
+      "test": "vigenere_rotated",
+      "offset": 17,
+      "hits": 104,
+      "total_words": 2746,
+      "rate": 0.037873270211216316
+    },
+    {
+      "test": "vigenere_rotated",
+      "offset": 18,
+      "hits": 108,
+      "total_words": 2746,
+      "rate": 0.03932993445010925
+    },
+    {
+      "test": "vigenere_rotated",
+      "offset": 19,
+      "hits": 107,
+      "total_words": 2746,
+      "rate": 0.03896576839038601
+    },
+    {
+      "test": "vigenere_rotated",
+      "offset": 20,
+      "hits": 98,
+      "total_words": 2746,
+      "rate": 0.035688273852876914
+    },
+    {
+      "test": "vigenere_rotated",
+      "offset": 21,
+      "hits": 94,
+      "total_words": 2746,
+      "rate": 0.03423160961398398
+    },
+    {
+      "test": "vigenere_rotated",
+      "offset": 22,
+      "hits": 104,
+      "total_words": 2746,
+      "rate": 0.037873270211216316
+    },
+    {
+      "test": "vigenere_rotated",
+      "offset": 23,
+      "hits": 98,
+      "total_words": 2746,
+      "rate": 0.035688273852876914
+    },
+    {
+      "test": "vigenere_rotated",
+      "offset": 24,
+      "hits": 103,
+      "total_words": 2746,
+      "rate": 0.03750910415149308
+    },
+    {
+      "test": "vigenere_rotated",
+      "offset": 25,
+      "hits": 100,
+      "total_words": 2746,
+      "rate": 0.03641660597232338
+    },
+    {
+      "test": "vigenere_rotated",
+      "offset": 26,
+      "hits": 100,
+      "total_words": 2746,
+      "rate": 0.03641660597232338
+    },
+    {
+      "test": "vigenere_rotated",
+      "offset": 27,
+      "hits": 105,
+      "total_words": 2746,
+      "rate": 0.03823743627093955
+    },
+    {
+      "test": "vigenere_rotated",
+      "offset": 28,
+      "hits": 90,
+      "total_words": 2746,
+      "rate": 0.03277494537509104
+    },
+    {
+      "test": "vigenere_rotated",
+      "offset": 29,
+      "hits": 112,
+      "total_words": 2746,
+      "rate": 0.04078659868900218
+    },
+    {
+      "test": "vigenere_rotated",
+      "offset": 30,
+      "hits": 103,
+      "total_words": 2746,
+      "rate": 0.03750910415149308
+    },
+    {
+      "test": "vigenere_rotated",
+      "offset": 31,
+      "hits": 120,
+      "total_words": 2746,
+      "rate": 0.043699927166788055
+    },
+    {
+      "test": "vigenere_rotated",
+      "offset": 32,
+      "hits": 97,
+      "total_words": 2746,
+      "rate": 0.035324107793153675
+    },
+    {
+      "test": "vigenere_rotated",
+      "offset": 33,
+      "hits": 114,
+      "total_words": 2746,
+      "rate": 0.041514930808448654
+    },
+    {
+      "test": "vigenere_rotated",
+      "offset": 34,
+      "hits": 75,
+      "total_words": 2746,
+      "rate": 0.027312454479242534
+    },
+    {
+      "test": "vigenere_rotated",
+      "offset": 35,
+      "hits": 116,
+      "total_words": 2746,
+      "rate": 0.04224326292789512
+    },
+    {
+      "test": "vigenere_rotated",
+      "offset": 36,
+      "hits": 102,
+      "total_words": 2746,
+      "rate": 0.037144938091769844
+    },
+    {
+      "test": "vigenere_rotated",
+      "offset": 37,
+      "hits": 96,
+      "total_words": 2746,
+      "rate": 0.03495994173343044
+    },
+    {
+      "test": "vigenere_rotated",
+      "offset": 38,
+      "hits": 106,
+      "total_words": 2746,
+      "rate": 0.03860160233066278
+    },
+    {
+      "test": "autokey",
+      "offset": 0,
+      "hits": 101,
+      "total_words": 2746,
+      "rate": 0.03678077203204661
+    },
+    {
+      "test": "autokey",
+      "offset": 1,
+      "hits": 103,
+      "total_words": 2746,
+      "rate": 0.03750910415149308
+    },
+    {
+      "test": "autokey",
+      "offset": 2,
+      "hits": 98,
+      "total_words": 2746,
+      "rate": 0.035688273852876914
+    },
+    {
+      "test": "autokey",
+      "offset": 3,
+      "hits": 101,
+      "total_words": 2746,
+      "rate": 0.03678077203204661
+    },
+    {
+      "test": "autokey",
+      "offset": 4,
+      "hits": 93,
+      "total_words": 2746,
+      "rate": 0.033867443554260745
+    },
+    {
+      "test": "autokey",
+      "offset": 5,
+      "hits": 96,
+      "total_words": 2746,
+      "rate": 0.03495994173343044
+    },
+    {
+      "test": "autokey",
+      "offset": 6,
+      "hits": 102,
+      "total_words": 2746,
+      "rate": 0.037144938091769844
+    },
+    {
+      "test": "autokey",
+      "offset": 7,
+      "hits": 97,
+      "total_words": 2746,
+      "rate": 0.035324107793153675
+    },
+    {
+      "test": "autokey",
+      "offset": 8,
+      "hits": 98,
+      "total_words": 2746,
+      "rate": 0.035688273852876914
+    },
+    {
+      "test": "autokey",
+      "offset": 9,
+      "hits": 101,
+      "total_words": 2746,
+      "rate": 0.03678077203204661
+    },
+    {
+      "test": "autokey",
+      "offset": 10,
+      "hits": 98,
+      "total_words": 2746,
+      "rate": 0.035688273852876914
+    },
+    {
+      "test": "autokey",
+      "offset": 11,
+      "hits": 93,
+      "total_words": 2746,
+      "rate": 0.033867443554260745
+    },
+    {
+      "test": "autokey",
+      "offset": 12,
+      "hits": 92,
+      "total_words": 2746,
+      "rate": 0.033503277494537506
+    },
+    {
+      "test": "autokey",
+      "offset": 13,
+      "hits": 94,
+      "total_words": 2746,
+      "rate": 0.03423160961398398
+    },
+    {
+      "test": "autokey",
+      "offset": 14,
+      "hits": 107,
+      "total_words": 2746,
+      "rate": 0.03896576839038601
+    },
+    {
+      "test": "autokey",
+      "offset": 15,
+      "hits": 98,
+      "total_words": 2746,
+      "rate": 0.035688273852876914
+    },
+    {
+      "test": "autokey",
+      "offset": 16,
+      "hits": 96,
+      "total_words": 2746,
+      "rate": 0.03495994173343044
+    },
+    {
+      "test": "autokey",
+      "offset": 17,
+      "hits": 91,
+      "total_words": 2746,
+      "rate": 0.033139111434814274
+    },
+    {
+      "test": "autokey",
+      "offset": 18,
+      "hits": 103,
+      "total_words": 2746,
+      "rate": 0.03750910415149308
+    },
+    {
+      "test": "autokey",
+      "offset": 19,
+      "hits": 102,
+      "total_words": 2746,
+      "rate": 0.037144938091769844
+    },
+    {
+      "test": "autokey",
+      "offset": 20,
+      "hits": 96,
+      "total_words": 2746,
+      "rate": 0.03495994173343044
+    },
+    {
+      "test": "autokey",
+      "offset": 21,
+      "hits": 91,
+      "total_words": 2746,
+      "rate": 0.033139111434814274
+    },
+    {
+      "test": "autokey",
+      "offset": 22,
+      "hits": 100,
+      "total_words": 2746,
+      "rate": 0.03641660597232338
+    },
+    {
+      "test": "autokey",
+      "offset": 23,
+      "hits": 96,
+      "total_words": 2746,
+      "rate": 0.03495994173343044
+    },
+    {
+      "test": "autokey",
+      "offset": 24,
+      "hits": 97,
+      "total_words": 2746,
+      "rate": 0.035324107793153675
+    },
+    {
+      "test": "autokey",
+      "offset": 25,
+      "hits": 98,
+      "total_words": 2746,
+      "rate": 0.035688273852876914
+    },
+    {
+      "test": "autokey",
+      "offset": 26,
+      "hits": 102,
+      "total_words": 2746,
+      "rate": 0.037144938091769844
+    },
+    {
+      "test": "autokey",
+      "offset": 27,
+      "hits": 102,
+      "total_words": 2746,
+      "rate": 0.037144938091769844
+    },
+    {
+      "test": "autokey",
+      "offset": 28,
+      "hits": 94,
+      "total_words": 2746,
+      "rate": 0.03423160961398398
+    },
+    {
+      "test": "autokey",
+      "offset": 29,
+      "hits": 96,
+      "total_words": 2746,
+      "rate": 0.03495994173343044
+    },
+    {
+      "test": "autokey",
+      "offset": 30,
+      "hits": 95,
+      "total_words": 2746,
+      "rate": 0.03459577567370721
+    },
+    {
+      "test": "autokey",
+      "offset": 31,
+      "hits": 103,
+      "total_words": 2746,
+      "rate": 0.03750910415149308
+    },
+    {
+      "test": "autokey",
+      "offset": 32,
+      "hits": 105,
+      "total_words": 2746,
+      "rate": 0.03823743627093955
+    },
+    {
+      "test": "autokey",
+      "offset": 33,
+      "hits": 97,
+      "total_words": 2746,
+      "rate": 0.035324107793153675
+    },
+    {
+      "test": "autokey",
+      "offset": 34,
+      "hits": 96,
+      "total_words": 2746,
+      "rate": 0.03495994173343044
+    },
+    {
+      "test": "autokey",
+      "offset": 35,
+      "hits": 96,
+      "total_words": 2746,
+      "rate": 0.03495994173343044
+    },
+    {
+      "test": "autokey",
+      "offset": 36,
+      "hits": 97,
+      "total_words": 2746,
+      "rate": 0.035324107793153675
+    },
+    {
+      "test": "autokey",
+      "offset": 37,
+      "hits": 102,
+      "total_words": 2746,
+      "rate": 0.037144938091769844
+    },
+    {
+      "test": "autokey",
+      "offset": 38,
+      "hits": 100,
+      "total_words": 2746,
+      "rate": 0.03641660597232338
+    },
+    {
+      "test": "running_key_continuous",
+      "page_offset": 0,
+      "hits": 92,
+      "total_words": 2746,
+      "rate": 0.033503277494537506
+    },
+    {
+      "test": "running_key_continuous",
+      "page_offset": 1,
+      "hits": 98,
+      "total_words": 2746,
+      "rate": 0.035688273852876914
+    },
+    {
+      "test": "running_key_continuous",
+      "page_offset": 2,
+      "hits": 100,
+      "total_words": 2746,
+      "rate": 0.03641660597232338
+    },
+    {
+      "test": "running_key_continuous",
+      "page_offset": 3,
+      "hits": 93,
+      "total_words": 2746,
+      "rate": 0.033867443554260745
+    },
+    {
+      "test": "running_key_continuous",
+      "page_offset": 4,
+      "hits": 111,
+      "total_words": 2746,
+      "rate": 0.04042243262927895
+    },
+    {
+      "test": "running_key_continuous",
+      "page_offset": 5,
+      "hits": 96,
+      "total_words": 2746,
+      "rate": 0.03495994173343044
+    },
+    {
+      "test": "running_key_continuous",
+      "page_offset": 6,
+      "hits": 101,
+      "total_words": 2746,
+      "rate": 0.03678077203204661
+    },
+    {
+      "test": "running_key_continuous",
+      "page_offset": 7,
+      "hits": 100,
+      "total_words": 2746,
+      "rate": 0.03641660597232338
+    },
+    {
+      "test": "running_key_continuous",
+      "page_offset": 8,
+      "hits": 83,
+      "total_words": 2746,
+      "rate": 0.030225782957028404
+    },
+    {
+      "test": "running_key_continuous",
+      "page_offset": 9,
+      "hits": 111,
+      "total_words": 2746,
+      "rate": 0.04042243262927895
+    },
+    {
+      "test": "running_key_continuous",
+      "page_offset": 10,
+      "hits": 102,
+      "total_words": 2746,
+      "rate": 0.037144938091769844
+    },
+    {
+      "test": "running_key_continuous",
+      "page_offset": 11,
+      "hits": 98,
+      "total_words": 2746,
+      "rate": 0.035688273852876914
+    },
+    {
+      "test": "running_key_continuous",
+      "page_offset": 12,
+      "hits": 103,
+      "total_words": 2746,
+      "rate": 0.03750910415149308
+    },
+    {
+      "test": "running_key_continuous",
+      "page_offset": 13,
+      "hits": 112,
+      "total_words": 2746,
+      "rate": 0.04078659868900218
+    },
+    {
+      "test": "running_key_continuous",
+      "page_offset": 14,
+      "hits": 104,
+      "total_words": 2746,
+      "rate": 0.037873270211216316
+    },
+    {
+      "test": "running_key_continuous",
+      "page_offset": 15,
+      "hits": 110,
+      "total_words": 2746,
+      "rate": 0.04005826656955572
+    },
+    {
+      "test": "running_key_continuous",
+      "page_offset": 16,
+      "hits": 96,
+      "total_words": 2746,
+      "rate": 0.03495994173343044
+    },
+    {
+      "test": "running_key_continuous",
+      "page_offset": 17,
+      "hits": 119,
+      "total_words": 2746,
+      "rate": 0.04333576110706482
+    },
+    {
+      "test": "running_key_continuous",
+      "page_offset": 18,
+      "hits": 103,
+      "total_words": 2746,
+      "rate": 0.03750910415149308
+    },
+    {
+      "test": "running_key_continuous",
+      "page_offset": 19,
+      "hits": 117,
+      "total_words": 2746,
+      "rate": 0.04260742898761835
+    },
+    {
+      "test": "vigenere_reversed_rotated",
+      "offset": 0,
+      "hits": 119,
+      "total_words": 2746,
+      "rate": 0.04333576110706482
+    },
+    {
+      "test": "vigenere_reversed_rotated",
+      "offset": 1,
+      "hits": 108,
+      "total_words": 2746,
+      "rate": 0.03932993445010925
+    },
+    {
+      "test": "vigenere_reversed_rotated",
+      "offset": 2,
+      "hits": 109,
+      "total_words": 2746,
+      "rate": 0.039694100509832485
+    },
+    {
+      "test": "vigenere_reversed_rotated",
+      "offset": 3,
+      "hits": 116,
+      "total_words": 2746,
+      "rate": 0.04224326292789512
+    },
+    {
+      "test": "vigenere_reversed_rotated",
+      "offset": 4,
+      "hits": 105,
+      "total_words": 2746,
+      "rate": 0.03823743627093955
+    },
+    {
+      "test": "vigenere_reversed_rotated",
+      "offset": 5,
+      "hits": 116,
+      "total_words": 2746,
+      "rate": 0.04224326292789512
+    },
+    {
+      "test": "vigenere_reversed_rotated",
+      "offset": 6,
+      "hits": 107,
+      "total_words": 2746,
+      "rate": 0.03896576839038601
+    },
+    {
+      "test": "vigenere_reversed_rotated",
+      "offset": 7,
+      "hits": 112,
+      "total_words": 2746,
+      "rate": 0.04078659868900218
+    },
+    {
+      "test": "vigenere_reversed_rotated",
+      "offset": 8,
+      "hits": 119,
+      "total_words": 2746,
+      "rate": 0.04333576110706482
+    },
+    {
+      "test": "vigenere_reversed_rotated",
+      "offset": 9,
+      "hits": 99,
+      "total_words": 2746,
+      "rate": 0.03605243991260015
+    },
+    {
+      "test": "vigenere_reversed_rotated",
+      "offset": 10,
+      "hits": 113,
+      "total_words": 2746,
+      "rate": 0.04115076474872542
+    },
+    {
+      "test": "vigenere_reversed_rotated",
+      "offset": 11,
+      "hits": 106,
+      "total_words": 2746,
+      "rate": 0.03860160233066278
+    },
+    {
+      "test": "vigenere_reversed_rotated",
+      "offset": 12,
+      "hits": 97,
+      "total_words": 2746,
+      "rate": 0.035324107793153675
+    },
+    {
+      "test": "vigenere_reversed_rotated",
+      "offset": 13,
+      "hits": 113,
+      "total_words": 2746,
+      "rate": 0.04115076474872542
+    },
+    {
+      "test": "vigenere_reversed_rotated",
+      "offset": 14,
+      "hits": 91,
+      "total_words": 2746,
+      "rate": 0.033139111434814274
+    },
+    {
+      "test": "vigenere_reversed_rotated",
+      "offset": 15,
+      "hits": 95,
+      "total_words": 2746,
+      "rate": 0.03459577567370721
+    },
+    {
+      "test": "vigenere_reversed_rotated",
+      "offset": 16,
+      "hits": 104,
+      "total_words": 2746,
+      "rate": 0.037873270211216316
+    },
+    {
+      "test": "vigenere_reversed_rotated",
+      "offset": 17,
+      "hits": 100,
+      "total_words": 2746,
+      "rate": 0.03641660597232338
+    },
+    {
+      "test": "vigenere_reversed_rotated",
+      "offset": 18,
+      "hits": 113,
+      "total_words": 2746,
+      "rate": 0.04115076474872542
+    },
+    {
+      "test": "vigenere_reversed_rotated",
+      "offset": 19,
+      "hits": 108,
+      "total_words": 2746,
+      "rate": 0.03932993445010925
+    },
+    {
+      "test": "vigenere_reversed_rotated",
+      "offset": 20,
+      "hits": 114,
+      "total_words": 2746,
+      "rate": 0.041514930808448654
+    },
+    {
+      "test": "vigenere_reversed_rotated",
+      "offset": 21,
+      "hits": 128,
+      "total_words": 2746,
+      "rate": 0.04661325564457393
+    },
+    {
+      "test": "vigenere_reversed_rotated",
+      "offset": 22,
+      "hits": 108,
+      "total_words": 2746,
+      "rate": 0.03932993445010925
+    },
+    {
+      "test": "vigenere_reversed_rotated",
+      "offset": 23,
+      "hits": 95,
+      "total_words": 2746,
+      "rate": 0.03459577567370721
+    },
+    {
+      "test": "vigenere_reversed_rotated",
+      "offset": 24,
+      "hits": 115,
+      "total_words": 2746,
+      "rate": 0.041879096868171886
+    },
+    {
+      "test": "vigenere_reversed_rotated",
+      "offset": 25,
+      "hits": 110,
+      "total_words": 2746,
+      "rate": 0.04005826656955572
+    },
+    {
+      "test": "vigenere_reversed_rotated",
+      "offset": 26,
+      "hits": 101,
+      "total_words": 2746,
+      "rate": 0.03678077203204661
+    },
+    {
+      "test": "vigenere_reversed_rotated",
+      "offset": 27,
+      "hits": 120,
+      "total_words": 2746,
+      "rate": 0.043699927166788055
+    },
+    {
+      "test": "vigenere_reversed_rotated",
+      "offset": 28,
+      "hits": 87,
+      "total_words": 2746,
+      "rate": 0.03168244719592134
+    },
+    {
+      "test": "vigenere_reversed_rotated",
+      "offset": 29,
+      "hits": 110,
+      "total_words": 2746,
+      "rate": 0.04005826656955572
+    },
+    {
+      "test": "vigenere_reversed_rotated",
+      "offset": 30,
+      "hits": 120,
+      "total_words": 2746,
+      "rate": 0.043699927166788055
+    },
+    {
+      "test": "vigenere_reversed_rotated",
+      "offset": 31,
+      "hits": 110,
+      "total_words": 2746,
+      "rate": 0.04005826656955572
+    },
+    {
+      "test": "vigenere_reversed_rotated",
+      "offset": 32,
+      "hits": 84,
+      "total_words": 2746,
+      "rate": 0.03058994901675164
+    },
+    {
+      "test": "vigenere_reversed_rotated",
+      "offset": 33,
+      "hits": 125,
+      "total_words": 2746,
+      "rate": 0.045520757465404224
+    },
+    {
+      "test": "vigenere_reversed_rotated",
+      "offset": 34,
+      "hits": 105,
+      "total_words": 2746,
+      "rate": 0.03823743627093955
+    },
+    {
+      "test": "vigenere_reversed_rotated",
+      "offset": 35,
+      "hits": 94,
+      "total_words": 2746,
+      "rate": 0.03423160961398398
+    },
+    {
+      "test": "vigenere_reversed_rotated",
+      "offset": 36,
+      "hits": 97,
+      "total_words": 2746,
+      "rate": 0.035324107793153675
+    },
+    {
+      "test": "vigenere_reversed_rotated",
+      "offset": 37,
+      "hits": 120,
+      "total_words": 2746,
+      "rate": 0.043699927166788055
+    },
+    {
+      "test": "vigenere_reversed_rotated",
+      "offset": 38,
+      "hits": 121,
+      "total_words": 2746,
+      "rate": 0.04406409322651129
+    }
+  ],
+  "pattern": [
+    26,
+    27,
+    24,
+    18,
+    16,
+    18,
+    15,
+    24,
+    22,
+    5,
+    8,
+    10,
+    15,
+    0,
+    10,
+    9,
+    13,
+    22,
+    21,
+    12,
+    2,
+    26,
+    16,
+    25,
+    14,
+    18,
+    22,
+    16,
+    23,
+    27,
+    20,
+    18,
+    13,
+    16,
+    24,
+    16,
+    0,
+    4,
+    9
+  ],
+  "reference_rate": 0.4090909090909091
+}
