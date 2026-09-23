@@ -1,0 +1,96 @@
+{
+  "best": {
+    "traversal": "diagonal_main",
+    "direction": "up",
+    "rate": 0.04442825928623452,
+    "hits": 122,
+    "total_words": 2746
+  },
+  "all_results": [
+    {
+      "traversal": "diagonal_main",
+      "direction": "up",
+      "hits": 122,
+      "total_words": 2746,
+      "rate": 0.04442825928623452
+    },
+    {
+      "traversal": "diagonal_main",
+      "direction": "down",
+      "hits": 102,
+      "total_words": 2746,
+      "rate": 0.037144938091769844
+    },
+    {
+      "traversal": "diagonal_anti",
+      "direction": "up",
+      "hits": 97,
+      "total_words": 2746,
+      "rate": 0.035324107793153675
+    },
+    {
+      "traversal": "diagonal_anti",
+      "direction": "down",
+      "hits": 99,
+      "total_words": 2746,
+      "rate": 0.03605243991260015
+    },
+    {
+      "traversal": "spiral_clockwise",
+      "direction": "up",
+      "hits": 107,
+      "total_words": 2746,
+      "rate": 0.03896576839038601
+    },
+    {
+      "traversal": "spiral_clockwise",
+      "direction": "down",
+      "hits": 95,
+      "total_words": 2746,
+      "rate": 0.03459577567370721
+    },
+    {
+      "traversal": "spiral_counterclockwise",
+      "direction": "up",
+      "hits": 94,
+      "total_words": 2746,
+      "rate": 0.03423160961398398
+    },
+    {
+      "traversal": "spiral_counterclockwise",
+      "direction": "down",
+      "hits": 107,
+      "total_words": 2746,
+      "rate": 0.03896576839038601
+    },
+    {
+      "traversal": "zigzag_rows",
+      "direction": "up",
+      "hits": 106,
+      "total_words": 2746,
+      "rate": 0.03860160233066278
+    },
+    {
+      "traversal": "zigzag_rows",
+      "direction": "down",
+      "hits": 115,
+      "total_words": 2746,
+      "rate": 0.041879096868171886
+    },
+    {
+      "traversal": "zigzag_cols",
+      "direction": "up",
+      "hits": 99,
+      "total_words": 2746,
+      "rate": 0.03605243991260015
+    },
+    {
+      "traversal": "zigzag_cols",
+      "direction": "down",
+      "hits": 97,
+      "total_words": 2746,
+      "rate": 0.035324107793153675
+    }
+  ],
+  "reference_rate": 0.4090909090909091
+}

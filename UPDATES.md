@@ -1,5 +1,16 @@
 # Research Updates
 
+## 2026-09-24 (continued - magic square diagonal/spiral traversal)
+- **Magic Square Traversal Test (Open-Leads #2 - remaining)**: Tested diagonal, anti-diagonal, spiral, and zigzag orderings of the page 5 magic square as Vigenère keys across all 56 unsolved pages.
+  - Diagonal main: 4.44% (up), 3.71% (down)
+  - Anti-diagonal: 3.53% (up), 3.61% (down)
+  - Spiral clockwise: 3.90% (up), 3.46% (down)
+  - Spiral counter-clockwise: 3.42% (up), 3.90% (down)
+  - Zigzag rows: 3.86% (up), 4.19% (down)
+  - Zigzag columns: 3.61% (up), 3.53% (down)
+  - All results in 3.4% - 4.4% range, consistent with noise floor (3-4% established in `ruled-out.md`).
+  - **Result: No signal exceeding noise floor**. All diagonal/spiral/zigzag traversals ruled out.
+
 ## 2026-09-24 (continued - deep analysis of Open-Leads #0)
 - **Critical Finding: Open-Leads #0 positions were incorrect**
   - The target pattern `[6,7,6,3,6,4,3,3]` was claimed at page 22 word 45 and page 47 word 11
