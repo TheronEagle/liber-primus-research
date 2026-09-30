@@ -5,28 +5,52 @@ inconclusive · 🟢 untested, genuinely open
 
 ## 🟢 0. HIGHEST PRIORITY — the word-length match at ACTUAL positions
 
-**IMPORTANT CORRECTION (2026-09-24)**: The original open-leads.md claimed the pattern `[6,7,6,3,6,4,3,3]` matched at page 22 word 45 and page 47 word 11. **This was incorrect.** Deep analysis shows:
-- The pattern `[6,7,6,3,6,4,3,3]` does NOT occur at those positions.
-- The pattern occurs exactly **2 times globally**:
-  - Block 19 (page ~36), local word 47
-  - Block 44 (page ~61), local word 12
-- The second pattern `[5,4,7,3,6,3,7,4]` was claimed at pages 43/58.
-- **Actual finding**: Occurs exactly **1 time globally** at Block 40 (page ~57), local word 42.
+> **SUPERSEDED IN PART (2026-09-30).** The "IMPORTANT CORRECTION" below is itself
+> wrong, and this entry is being kept only as the record of what happened. Do not
+> cite the "corrected positions" from an older commit.
+>
+> The 2026-09-24 correction assumed `blocks[0]` = page 17, but the transcription
+> file is the **whole book** and the real mapping is `page = raw_index + 3`. So
+> **blocks 19 and 44 *are* pages 22 and 47** — the correction chased the very
+> pages the original claim named, and wrongly declared that claim false.
+> Block 40 = page 43. The `open-leads.md` positional claims here are all shifted.
+>
+> **What survives:** the 8-word length pattern `[6,7,6,3,6,4,3,3]` *does* occur at
+> pages 22 and 47, as first reported. The follow-up negative results (values
+> differ, autokey/running-key yields gibberish) were computed on those correct
+> pages all along, so this lead's *conclusion* is probably sound even though the
+> reasoning around it was not. That has not been re-verified since the mapping
+> fix, so it is re-opened as 🟡 rather than closed. See the CORRECTION section in
+> `ruled-out.md` for the full derivation.
 
-**Revised next steps for this lead:**
-1. Extract the exact rune sequences at the **ACTUAL** matching positions (block 19 word 47 and block 44 word 12).
-2. Compare their Gematria VALUES directly (not just lengths) — if they're also identical or near-identical in values, that's a much stronger signal.
-3. If the values differ, try an autokey/running-key test: use one page's runes (or their values) as the decryption key for the other page's corresponding region, and vice versa, both directions.
-4. Check whether this pattern recurs elsewhere at shorter lengths (6-7 words) — the Kasiski-on-lengths test already found some 6-length and shorter repeats worth a second look (see `scripts/gematria_toolkit.py` for `word_length_kasiski()` and `extend_match()`).
-5. Check n=6 and n=7 too — shorter matches will be far more numerous and mostly noise, but worth a scan.
+**The original (2026-09-22) claim, which turned out to be right:** the pattern
+`[6,7,6,3,6,4,3,3]` matched at page 22 word 45 and page 47 word 11. A second
+pattern `[5,4,7,3,6,3,7,4]` was claimed at pages 43/58.
 
-**Status update (2026-09-24)**: 
-- Values differ between the two blocks (verified).
-- Autokey/running-key tests on both blocks: no signal (gibberish output).
+**The (incorrect) 2026-09-24 correction, recorded for the audit trail:**
+- Claimed the pattern occurs exactly 2 times globally, at "block 19 word 47" and
+  "block 44 word 12".
+- Claimed the second pattern occurs exactly 1 time globally at "block 40 word 42".
+- Concluded the original page-22/47 claim was incorrect.
+All of those block numbers are raw indices that need `+3` to become pages.
+
+**Revised next steps (still open):**
+1. Re-run the pattern search on the **verified** page mapping and record actual
+   page numbers, not raw block indices.
+2. Re-check the 2026-09-24 value-comparison and autokey results to confirm they
+   really were computed on pages 22/47.
+3. Re-derive the corpus size — it is **55 pages / 12,956 runes**; page 67 is
+   missing from the transcription entirely.
+
+**Status (2026-09-24, on the correct pages):**
+- Values differ between the two pages (verified).
+- Autokey/running-key tests on both: no signal (gibberish output).
 - Shared n-grams as keys: no signal.
-- **Pattern 2 (block 40)**: Unique global occurrence. Self-decrypt with all offsets: max hit rate 3.51% (2/57) - exactly noise floor. No signal.
 
-**Status: TESTED, RESULT NEGATIVE.** The structural word-length correlation is real but doesn't yield a usable key. All reasonable cryptographic interpretations of the length correlation have been exhausted without signal above noise.
+**Status: TESTED, RESULT NEGATIVE, but the positional claim is re-opened (🟡)**
+pending a re-run under the corrected mapping. The structural word-length
+correlation is real; all reasonable cryptographic interpretations of it have been
+exhausted without signal above noise.
 
 ---
 

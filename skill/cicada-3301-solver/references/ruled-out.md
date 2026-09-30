@@ -211,3 +211,116 @@ a large sweep.
 3. **Verify page numbering/identity against the archive index before
    characterizing a page as hard or easy** (see the postmortem note in
    solved-pages.md).
+4. **A positive control's plaintext must be English, not the corpus under test.**
+   This bit hard in the 2026-09-30 session. The first version of the extended
+   Friedman test used the observed LP2 corpus as the plaintext for its positive
+   control and then Vigenere-encrypted it. But the LP2 runes are already
+   near-random (IC 0.0345 ≈ the 1/29 baseline), so encrypting them leaves them
+   near-random: the "positive control" showed no spike, and the script correctly
+   refused to interpret the result. This is a subtler failure than a missing
+   control, because a broken control reads as "the estimator can't see anything"
+   and invites dismissing a real signal. Polyalphabetic key-length detection only
+   works if the underlying plaintext is non-random; each ciphertext column has to
+   be a monoalphabetic substitution of English. **Calibrate on English
+   (`download/kjv_gutenberg.txt`), never on the mystery text.**
+5. **Re-derive the block→page mapping from anchors; don't inherit it.** See the
+   off-by-14 below. Every "block N" in this repo's older results is off, and the
+   error was invisible because internal indices are self-consistent.
+
+---
+
+## CORRECTION (2026-09-30): the block/page mapping was wrong by 14, and it invalidated the top-priority lead
+
+**This supersedes the positional claims in `open-leads.md` item 0. Read it before
+citing any "block N" from an older commit.**
+
+Every prior session parsed the transcription as:
+
+```python
+blocks = [b.strip() for b in content.split('\n%')[1:] if b.strip()]
+```
+
+and then assumed `blocks[0]` is page 17. But
+`data/liber-primus-jens/download/rtkd_liber_primus_transcription.txt` is the
+**whole book**, not just LP2. The correct mapping is:
+
+| raw index | contents |
+|---|---|
+| 0–13 | LP1, sequential pages 00–16 |
+| 14–71 | LP2, sequential pages 17–74 |
+| 72 | empty trailing segment |
+
+**`sequential_page = raw_block_index + 3`**, not `+ 17`.
+
+Verified two independent ways in `experiments/2026-09-30/extended_friedman.py`
+(`resolve_alignment()`), which refuses to report any statistic unless the mapping
+checks out:
+
+1. All 57 rows of `page-catalog.md`'s 15-letter previews each match exactly one
+   block, and every block's rune count equals the catalog's recorded count.
+2. The two solved pages pin the constant: `raw[70]` = "An End" (page 73),
+   `raw[71]` = "A Parable" (page 74). Page = index + 3 holds for every block.
+
+### What this breaks
+
+`open-leads.md` item 0 records a 2026-09-24 "correction" that moved the
+word-length-pattern lead from **pages 22 and 47** to "blocks 19/44" on the
+grounds that the pattern doesn't occur at pages 22/47. But blocks 19 and 44 *are*
+pages 22 and 47 (19+3, 44+3). The correction chased the same two pages under a
+different label and concluded the original claim was false when it was right.
+The separate "unique pattern" was at block 40 = page 43, not a 43/58 pair.
+
+So: **the 8-word length pattern `[6,7,6,3,6,4,3,3]` does occur at pages 22 and
+47, exactly as first reported.** The "corrected positions" and the follow-up
+negative results in `open-leads.md` item 0 are not evidence about a different
+pair of pages — they are a re-run of the original pair. The values there still
+differ and autokey/running-key still yields gibberish, so that lead's *conclusion*
+is probably unaffected; but the reasoning that "the original claim was false" is
+wrong and must not be cited again.
+
+### Also: page 67 is absent from the transcription
+
+`raw[64]` is an **empty segment** — sequential page 67 was never transcribed in
+this source. Consequences:
+
+- The unsolved corpus is **55 pages / 12,956 runes**, not "56 pages / 13,051
+  runes" as stated in the Kasiski entry above. That Kasiski run's "13,051" is 95
+  runes too high — about one short page, consistent with page 67 being counted
+  but not transcribed. Its conclusion (no periodicity) is unaffected by 95 runes,
+  but the number is wrong.
+- Any future test claiming 56 unsolved pages is testing 55.
+
+---
+
+## Extended Friedman sweep, key lengths 1–80 (2026-09-30) — RULED OUT
+
+**Gap filled:** the Friedman test above covers L=1–20 only, concluding "no fixed
+repeating key of length ≤20 is used uniformly across pages." L=21+ was never
+tested. At ~230 runes/page a per-page test can't resolve L=40 (~6 samples per
+column), so this pools columns across the full corpus and sweeps L=1–80.
+
+Method: for each L, every value at absolute corpus position *i* goes to column
+(*i* mod *L*); mean the per-column IC. Script
+`experiments/2026-09-30/extended_friedman.py`, raw output
+`experiments/2026-09-30/extended_friedman.json`. Corpus: 55 present unsolved
+pages, 12,956 runes, 29-symbol alphabet. Page boundaries are deliberately
+ignored — a flat curve there is the signature of one key running continuously.
+
+| test | best L | best IC | margin over null |
+|---|---|---|---|
+| **Positive control** (real English + DIVINITY, true L=8) | 80 | 0.0728 | **+0.0380** |
+| **Null control** (values shuffled) | 77 | 0.0348 | — |
+| **Observed** (unsolved LP2) | 60 | 0.0349 | **+0.0005** |
+
+- English plaintext IC = 0.0725; random 29-symbol baseline = 0.0345. The gap
+  between those two is the only reason key-length detection works at all.
+- Observed mean IC across all 80 key lengths = 0.0345, i.e. **identical to
+  random**. The largest observed margin is +0.0005 at L=40 — 1/76th of the
+  positive control's margin, at z=2.76, exactly the upward bias expected from
+  taking a max over 80 candidates.
+
+**Conclusion: a single repeating Vigenère key running continuously through the
+book is ruled out for all key lengths 1–80**, not just 1–20. This extends the
+strongest negative result in this file. The test says nothing about a *per-page*
+key (each page with its own key is invisible to this method) or about
+non-Vigenère families.

@@ -1,0 +1,3 @@
+[submodule "iddqd"]
+	path = iddqd
+	url = https://github.com/rtkd/iddqd
