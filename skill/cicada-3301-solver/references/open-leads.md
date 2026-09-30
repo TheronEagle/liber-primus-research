@@ -42,15 +42,33 @@ All of those block numbers are raw indices that need `+3` to become pages.
 3. Re-derive the corpus size — it is **55 pages / 12,956 runes**; page 67 is
    missing from the transcription entirely.
 
-**Status (2026-09-24, on the correct pages):**
-- Values differ between the two pages (verified).
-- Autokey/running-key tests on both: no signal (gibberish output).
-- Shared n-grams as keys: no signal.
+**Status (2026-09-30 RE-RUN — the original claim is VINDICATED):**
+Re-run from scratch on the verified page mapping with a corrected scorer
+(`experiments/2026-09-30/lead0_rerun.py`):
 
-**Status: TESTED, RESULT NEGATIVE, but the positional claim is re-opened (🟡)**
-pending a re-run under the corrected mapping. The structural word-length
-correlation is real; all reasonable cryptographic interpretations of it have been
-exhausted without signal above noise.
+- Pattern `[6,7,6,3,6,4,3,3]` occurs **contiguously at page 22 word 47 and page
+  47 word 12** — i.e. the 2026-09-22 claim, on real page numbers.
+- Pattern `[5,4,7,3,6,3,7,4]` occurs at **page 43 word 42 and page 58 word 47** —
+  also exactly as originally claimed. The 2026-09-24 "correction" said this one
+  occurred only once, at "block 40"; that was wrong on both counts.
+- The 8-word runs are 38 runes each and their values are **not** identical.
+- Elementwise difference (p22 − p47 mod 29) renders as
+  `IETHXCGGNMEAEAOERCNPDIOQAEGENNGEOSYEOXBOEEOTRRWG` — not English.
+
+**Status: TESTED, RESULT NEGATIVE — now closed 🔴 on sound reasoning.** Eight
+cross-page key variants (autokey/running-key in both directions, plus the
+elementwise difference as an additive stream, both signs, on both pages) were
+scored. Best was 10.53% ambiguity-aware dictionary hits vs a 78.9% ceiling for a
+correct decrypt. A 400-sample permutation test of the max-over-8 statistic gives
+**p = 0.113** — squarely inside the null — and the decoded text is gibberish with
+dictionary words scattered at 13% of the way to a real solution
+(`experiments/2026-09-30/lead0_permutation.py`, `.json`). The earlier
+"best" of +7.54pp lift disappears once the multiple-comparisons correction is
+applied and the control is computed on the right data.
+
+The structural word-length correlation between pages 22 and 47 is real and
+reproducible. Every reasonable cryptographic reading of it has now been tested
+on the correct pages with a validated instrument. It does not yield a key.
 
 ---
 

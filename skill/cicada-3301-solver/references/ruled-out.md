@@ -274,9 +274,16 @@ So: **the 8-word length pattern `[6,7,6,3,6,4,3,3]` does occur at pages 22 and
 47, exactly as first reported.** The "corrected positions" and the follow-up
 negative results in `open-leads.md` item 0 are not evidence about a different
 pair of pages — they are a re-run of the original pair. The values there still
-differ and autokey/running-key still yields gibberish, so that lead's *conclusion*
-is probably unaffected; but the reasoning that "the original claim was false" is
-wrong and must not be cited again.
+differ and autokey/running-key still yields gibberish, so the *conclusion* of
+that lead is unaffected; but the reasoning that "the original claim was false"
+was wrong and must not be cited again.
+
+**Re-verified 2026-09-30** (`experiments/2026-09-30/lead0_rerun.py`): both
+patterns land exactly where first claimed — `[6,7,6,3,6,4,3,3]` at page 22
+word 47 and page 47 word 12; `[5,4,7,3,6,3,7,4]` at page 43 word 42 and page 58
+word 47. The 2026-09-24 correction was wrong on both patterns. Lead 0 is now
+closed 🔴 with a permutation test behind it (p=0.113), not just with a
+"no dictionary hits" observation.
 
 ### Also: page 67 is absent from the transcription
 
@@ -291,6 +298,72 @@ this source. Consequences:
 - Any future test claiming 56 unsolved pages is testing 55.
 
 ---
+
+## Scorer defect (2026-09-30): the documented ambiguity handling does not exist
+
+`gematria-primus.md` and `SKILL.md` both state that the scorer handles the
+alphabet's ambiguous runes "via `normalize_ambiguous()`". **That function does not
+exist.** Grepping the entire repo for `normalize_ambiguous` returns zero hits.
+
+`dict_score()` is exact string equality, and `VAL_TO_LATIN` renders each value with
+its PRIMARY spelling only. So a word is scored a **miss** if its true spelling
+contains any ambiguous rune. Measured on the two known-solved pages, where the
+plaintext is certain and the answer is known:
+
+| page | words | old exact-match | ambiguity-aware |
+|---|---|---|---|
+| 0 (LP1) | 12 | 58.3% | 83.3% |
+| 5 (LP1) | 14 | 85.7% | 85.7% |
+| 73 (LP2) | 25 | 64.0% | 72.0% |
+| 74 (LP2) | 21 | 81.0% | 85.7% |
+
+The three words it silently loses on known-correct plaintext:
+
+    p73: "EUERY"  -> EVERY    (v = U in the primary spelling)
+    p73: "SEEC"   -> SEEK     (k = C in the primary spelling)
+    p74: "DIUINITY" -> DIVINITY
+
+**Direction of the bias matters.** The error is systematic, not random: the same
+words fail for every candidate key, and it penalises *correct* decrypts more than
+wrong ones, because a wrong decrypt rarely produces real words at all. So this
+bias suppresses signal rather than manufacturing it. The consequence is still
+serious: the "3-4% noise floor" quoted throughout this file is inflated, and the
+margin between noise and signal is compressed. It cannot manufacture a false
+positive, but it can cause a real one to be dismissed as noise.
+
+**Benchmarks are therefore restated:**
+- Ceiling for a correct decrypt, old scorer: **72.5%** (mean of pages 73/74).
+- Ceiling for a correct decrypt, ambiguity-aware: **78.9%**.
+- The "40.9%" figure quoted in earlier rounds of this file is not reproducible
+  under either scorer on these texts; treat 72.5-78.9% as the real bar.
+
+Implemented and measured in `experiments/2026-09-30/scorer_audit.py` (+`.json`).
+The fix is not in `gematria_toolkit.py` because changing the shared scorer would
+retroactively invalidate every number already logged here; the ambiguity-aware
+scorer lives in the experiment files until someone decides whether to re-baseline
+the whole file.
+
+**A note on what this does *not* do:** this is not a reason to expect the
+unsolved pages are secretly readable. A 6-12pp ceiling correction does not turn
+10% into 70%.
+
+## Reading the numbers honestly: multiple comparisons, not just controls
+
+A random control is necessary but not sufficient. Two lessons from 2026-09-30:
+
+1. **The control must be computed on the same statistic you are reporting.**
+   `lead0_rerun.py` produced a "+7.54pp lift" for its best key variant — the best
+   number in this repo's history. `lead0_permutation.py` then permuted the target
+   page's word groups 400×, re-ran all 8 variants, and kept the best each time.
+   The shuffle control for the winning variant came out at **10.53%, identical to
+   its own observed rate — a lift of exactly 0.00%**, and p=0.113 against the
+   max-over-8 null. The "+7.54pp" was an artifact of comparing a rate against a
+   control computed with a different word ordering.
+2. **A maximum over N tests is biased upward.** With 80 key lengths the expected
+   best margin sits at z≈2.8 from chance alone. Always report the permutation
+   null for the *max-over-N* statistic, not a fixed threshold, and always print
+   the decoded text. Gibberish with scattered 5-letter dictionary words is the
+   signature of noise, and no percentage rescues it.
 
 ## Extended Friedman sweep, key lengths 1–80 (2026-09-30) — RULED OUT
 

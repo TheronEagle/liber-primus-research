@@ -1,0 +1,64 @@
+{
+  "dictionary_size": 369652,
+  "results": [
+    {
+      "page": 0,
+      "words": 12,
+      "old_exact_match_hits": 7,
+      "old_exact_match_rate": 0.5833333333333334,
+      "ambiguity_aware_hits": 10,
+      "ambiguity_aware_rate": 0.8333333333333334
+    },
+    {
+      "page": 5,
+      "words": 14,
+      "old_exact_match_hits": 12,
+      "old_exact_match_rate": 0.8571428571428571,
+      "ambiguity_aware_hits": 12,
+      "ambiguity_aware_rate": 0.8571428571428571
+    },
+    {
+      "page": 73,
+      "words": 25,
+      "old_exact_match_hits": 16,
+      "old_exact_match_rate": 0.64,
+      "ambiguity_aware_hits": 18,
+      "ambiguity_aware_rate": 0.72
+    },
+    {
+      "page": 74,
+      "words": 21,
+      "old_exact_match_hits": 17,
+      "old_exact_match_rate": 0.8095238095238095,
+      "ambiguity_aware_hits": 18,
+      "ambiguity_aware_rate": 0.8571428571428571
+    }
+  ],
+  "solved_pages_ceiling": {
+    "old_exact_match": 0.7247619047619047,
+    "ambiguity_aware": 0.7885714285714285
+  },
+  "missed_words": [
+    {
+      "page": 73,
+      "rendered": "EUERY",
+      "real_spellings": [
+        "EVERY"
+      ]
+    },
+    {
+      "page": 73,
+      "rendered": "SEEC",
+      "real_spellings": [
+        "SEEK"
+      ]
+    },
+    {
+      "page": 74,
+      "rendered": "DIUINITY",
+      "real_spellings": [
+        "DIVINITY"
+      ]
+    }
+  ]
+}
